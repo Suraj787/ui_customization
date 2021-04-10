@@ -15,11 +15,11 @@ app_license = "MIT"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/ui_customization/css/ui_customization.css"
+app_include_css = "/assets/ui_customization/css/ui_customization.css"
 # app_include_js = "/assets/ui_customization/js/ui_customization.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/ui_customization/css/ui_customization.css"
+web_include_css = "/assets/ui_customization/css/ui_customization.css"
 # web_include_js = "/assets/ui_customization/js/ui_customization.js"
 
 # include js in page
