@@ -122,8 +122,19 @@ body,
 body .web-footer{display: none;}
 header.navbar, 
 nav.navbar{
-    background: url("../images/loginBg.jpg") 0px -237px !important;
     height: 100px!important;
+}
+header.navbar::after, 
+nav.navbar::after{
+    content: "";
+    background: url("../images/headerBg.jpg") 0px -40px !important;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
 }
 .page-head{top: 100px;}
 .navbar-brand.navbar-home, 
