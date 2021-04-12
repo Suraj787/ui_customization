@@ -1,11 +1,14 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "creation": "2021-04-10 14:43:10.994330",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "logo"
+  "logo",
+  "background",
+  "colour"
  ],
  "fields": [
   {
@@ -17,12 +20,16 @@
    "fieldname": "background",
    "fieldtype": "Attach Image",
    "label": "Background"
+  },
+  {
+   "fieldname": "colour",
+   "fieldtype": "Color",
+   "label": "Color"
   }
  ],
- "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2021-04-10 14:43:10.994330",
+ "modified": "2021-04-10 20:27:13.624364",
  "modified_by": "Administrator",
  "module": "ui_customization",
  "name": "Site Settings",

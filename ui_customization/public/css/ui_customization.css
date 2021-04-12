@@ -212,10 +212,10 @@ header #navbar-breadcrumbs a{color: #fff;}
     background: #1a2227;
     color: #fff;
     fill: #fff;
-    -webkit-animation: hoverBg 1s infinite;
+    /* -webkit-animation: hoverBg 1s infinite;
    -moz-animation: hoverBg 1s infinite;
    -o-animation: hoverBg 1s infinite;
-   animation: hoverBg 1s infinite;
+   animation: hoverBg 1s infinite; */
 }
 .breadcrumb-container,
 .breadcrumb{
