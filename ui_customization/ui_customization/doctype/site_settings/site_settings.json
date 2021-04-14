@@ -6,9 +6,11 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "favicon",
   "logo",
-  "background",
-  "colour"
+  "login_background",
+  "student_background",
+  "employee_background"
  ],
  "fields": [
   {
@@ -17,19 +19,29 @@
    "label": "Logo"
   },
   {
-   "fieldname": "background",
+   "fieldname": "favicon",
    "fieldtype": "Attach Image",
-   "label": "Background"
+   "label": "Favicon"
   },
   {
-   "fieldname": "colour",
-   "fieldtype": "Color",
-   "label": "Color"
+   "fieldname": "login_background",
+   "fieldtype": "Attach Image",
+   "label": "Login Background"
+  },
+  {
+   "fieldname": "student_background",
+   "fieldtype": "Attach Image",
+   "label": "Student Background"
+  },
+  {
+   "fieldname": "employee_background",
+   "fieldtype": "Attach Image",
+   "label": "Employee Background"
   }
  ],
  "issingle": 1,
  "links": [],
- "modified": "2021-04-10 20:27:13.624364",
+ "modified": "2021-04-14 20:37:05.947024",
  "modified_by": "Administrator",
  "module": "ui_customization",
  "name": "Site Settings",
@@ -42,6 +54,16 @@
    "print": 1,
    "read": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "All",
    "share": 1,
    "write": 1
   }

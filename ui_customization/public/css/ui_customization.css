@@ -123,6 +123,7 @@ body .web-footer{display: none;}
 header.navbar, 
 nav.navbar{
     height: 100px!important;
+    background:none;
 }
 header.navbar::after, 
 nav.navbar::after{
