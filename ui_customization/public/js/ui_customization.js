@@ -11,6 +11,7 @@ $(document).ready(function () {
                         if (proFileRole === 'Student Role') {
                             const style = document.createElement('style');
                             style.innerHTML = `
+                                header.navbar::after,
                                 nav.navbar.navbar-expand-lg::after {
                                     background: url(${settings.student_background}) -389px -101px !important;
                                 }
@@ -19,6 +20,7 @@ $(document).ready(function () {
                         } else if (proFileRole === 'Employee Role') {
                             const style = document.createElement('style');
                             style.innerHTML = `
+                            header.navbar::after,
                             nav.navbar.navbar-expand-lg::after {
                                 background: url(${settings.employee_background}) -389px -101px !important;
                             }
@@ -28,7 +30,7 @@ $(document).ready(function () {
                     })
             })
     }
-    console.log('notices')
+    // console.log('notices')
     frappe.model.get_value('Notice Board',  { }, '*',
         (notices) => {
             console.log(notices)
