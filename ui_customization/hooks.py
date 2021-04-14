@@ -128,6 +128,6 @@ web_include_js = "/assets/ui_customization/js/ui_customization.js"
 # }
 
 website_context = {
-    "favicon": "/assets/images/fav.png",
-    # "splash_image": “/assets/your_app/images/your_splash.png”
+    "favicon": "assets/ui_customization/images/fav.png",
+    "splash_image": "assets/ui_customization/images/logo.png"
 }
