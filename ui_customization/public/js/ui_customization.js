@@ -12,7 +12,7 @@ $(document).ready(function () {
                             const style = document.createElement('style');
                             style.innerHTML = `
                                 nav.navbar.navbar-expand-lg::after {
-                                    background: url(${settings.student_background}) 0px 0px !important;
+                                    background: url(${settings.student_background}) -389px -101px !important;
                                 }
                                 `;
                             document.head.appendChild(style);
@@ -20,7 +20,7 @@ $(document).ready(function () {
                             const style = document.createElement('style');
                             style.innerHTML = `
                             nav.navbar.navbar-expand-lg::after {
-                                background: url(${settings.employee_background}) 0px 0px !important;
+                                background: url(${settings.employee_background}) -389px -101px !important;
                             }
                             `;
                             document.head.appendChild(style);
@@ -28,4 +28,9 @@ $(document).ready(function () {
                     })
             })
     }
+    console.log('notices')
+    frappe.model.get_value('Notice Board',  { }, '*',
+        (notices) => {
+            console.log(notices)
+        })
 })
