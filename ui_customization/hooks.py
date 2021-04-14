@@ -127,3 +127,7 @@ web_include_js = "/assets/ui_customization/js/ui_customization.js"
 # 	"Task": "ui_customization.task.get_dashboard_data"
 # }
 
+website_context = {
+    "favicon": "/assets/images/fav.png",
+    # "splash_image": “/assets/your_app/images/your_splash.png”
+}

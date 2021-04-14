@@ -1,4 +1,4 @@
-document.querySelector("link[rel*='icon']").href = "/assets/images/fav.png";
+// document.querySelector("link[rel*='icon']").href = "/assets/images/fav.png";
 
 // frappe.model.get_value('Print Settings', {'name': 'Print Settings'}, 'pdf_page_size',
 //   function(d) {
