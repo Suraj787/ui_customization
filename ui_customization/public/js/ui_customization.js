@@ -29,10 +29,10 @@ $(document).ready(function () {
                         }
                     })
             })
+        // console.log('notices')
+        frappe.model.get_value('Notice Board', child.item_code, '*',
+            (notices) => {
+                console.log(notices)
+            })
     }
-    // console.log('notices')
-    frappe.model.get_value('Notice Board',  { }, '*',
-        (notices) => {
-            console.log(notices)
-        })
 })
