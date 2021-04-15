@@ -3,6 +3,7 @@ $(document).ready(function () {
     if (frappe.session.user != 'Guest') {
         frappe.model.get_value('User', { 'name': frappe.session.user }, "role_profile_name",
             (role) => {
+                // Update Header Images
                 proFileRole = role.role_profile_name
                 frappe.model.get_value('Site Settings', { 'name': 'Site Settings' }, '*',
                     (settings) => {
@@ -26,13 +27,27 @@ $(document).ready(function () {
                             }
                             `;
                             document.head.appendChild(style);
+                        }else{
+                            const style = document.createElement('style');
+                            style.innerHTML = `
+                            header.navbar::after,
+                            nav.navbar.navbar-expand-lg::after {
+                                background: url(${settings.main_background}) -389px -101px !important;
+                            }
+                            `;
+                            document.head.appendChild(style);
                         }
                     })
             })
-        // console.log('notices')
-        frappe.model.get_value('Notice Board', child.item_code, '*',
-            (notices) => {
-                console.log(notices)
-            })
+        // Update Notice Board
+        frappe.call({
+            method: "ui_customization.ui_customization.doctype.custom_methords.Notice_Board_List",
+            args: {
+
+            },
+            callback: (r) => {
+                // console.log(r)
+            }
+        });
     }
 })

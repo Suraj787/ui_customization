@@ -127,8 +127,7 @@ nav.navbar{
 header.navbar::after, 
 nav.navbar::after{
     content: "";
-    background: url("../images/headerBg.jpg") 0px -40px !important;
-    opacity: 0.2;
+    /* background: url("../images/headerBg.jpg") 0px -40px !important; */
     top: 0;
     left: 0;
     bottom: 0;
