@@ -12,27 +12,27 @@ $(document).ready(function () {
                         if (proFileRole === 'Student Role') {
                             const style = document.createElement('style');
                             style.innerHTML = `
-                                header.navbar::after,
-                                nav.navbar.navbar-expand-lg::after {
-                                    background: url(${settings.student_background}) -389px -101px !important;
+                                header.navbar,
+                                nav.navbar.navbar-expand-lg {
+                                    background-image: url(${settings.student_background})  !important;
                                 }
                                 `;
                             document.head.appendChild(style);
                         } else if (proFileRole === 'Employee Role') {
                             const style = document.createElement('style');
                             style.innerHTML = `
-                            header.navbar::after,
-                            nav.navbar.navbar-expand-lg::after {
-                                background: url(${settings.employee_background}) -389px -101px !important;
+                            header.navbar,
+                            nav.navbar.navbar-expand-lg {
+                                background-image: url(${settings.employee_background}) !important;
                             }
                             `;
                             document.head.appendChild(style);
                         }else{
                             const style = document.createElement('style');
                             style.innerHTML = `
-                            header.navbar::after,
-                            nav.navbar.navbar-expand-lg::after {
-                                background: url(${settings.main_background}) -389px -101px !important;
+                            header.navbar,
+                            nav.navbar.navbar-expand-lg {
+                                background-image: url(${settings.main_background})  !important;
                             }
                             `;
                             document.head.appendChild(style);

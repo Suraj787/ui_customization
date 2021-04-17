@@ -9,6 +9,7 @@
   "favicon",
   "logo",
   "login_background",
+  "main_background",
   "student_background",
   "employee_background"
  ],
@@ -37,11 +38,16 @@
    "fieldname": "employee_background",
    "fieldtype": "Attach Image",
    "label": "Employee Background"
+  },
+  {
+   "fieldname": "main_background",
+   "fieldtype": "Attach Image",
+   "label": "Main Background"
   }
  ],
  "issingle": 1,
  "links": [],
- "modified": "2021-04-14 20:37:05.947024",
+ "modified": "2021-04-17 15:47:38.764118",
  "modified_by": "Administrator",
  "module": "ui_customization",
  "name": "Site Settings",
