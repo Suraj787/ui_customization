@@ -192,7 +192,7 @@ nav.navbar{
 }
 
 .container.my-4{
-    background: #fff;
+    /* background: #fff; */
     margin: 0;
     padding: 10px;
     border-radius: 8px;
