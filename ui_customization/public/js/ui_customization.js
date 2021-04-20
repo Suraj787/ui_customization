@@ -16,6 +16,7 @@ $(document).ready(function () {
                                 nav.navbar.navbar-expand-lg {
                                     background-image: url(${settings.student_background})  !important;
                                 }
+                                .layout-side-section{display: none;}
                                 `;
                             document.head.appendChild(style);
                         } else if (proFileRole === 'Employee Role') {
@@ -27,7 +28,7 @@ $(document).ready(function () {
                             }
                             `;
                             document.head.appendChild(style);
-                        }else{
+                        } else {
                             const style = document.createElement('style');
                             style.innerHTML = `
                             header.navbar,
