@@ -119,7 +119,8 @@ body[frappe-session-status='logged-out'] nav.navbar {display: none;}
 
 
 /* Home Page */
-body[data-path='student-applicant'] nav.navbar {display: block;}
+body,
+.page-container{background: #dcfade;}
 body .web-footer{display: none;}
 header.navbar, 
 nav.navbar{
@@ -138,7 +139,6 @@ nav.navbar{
     width: 75px;
     height: 75px;
     border-radius: 100%;
-    font-size: 0;
 }
 .navbar-brand span,
 .navbar-brand img{ display: none;}
@@ -147,12 +147,9 @@ nav.navbar{
     padding:0;
     max-width: inherit!important;
 }
-#page-student-applicant{
-    background: #fff;
-}
 .sidebar-column,
 .layout-side-section{
-    background: #4897d3;
+    background: #9bfaa1;
 }
 .sidebar-item{
     padding: 0;
@@ -186,7 +183,7 @@ nav.navbar{
 .sidebar-item a:hover,
 .desk-sidebar .standard-sidebar-item:hover,
 .desk-sidebar .standard-sidebar-item.selected, .search-dialog .search-results .search-sidebar .standard-sidebar-item.selected, .standard-sidebar .standard-sidebar-item.selected {
-    background-color: #3979a9;
+    background-color: #5cbc60;
     color: var(--text-color);
     border-radius: 8px!important;
 }
@@ -211,33 +208,4 @@ nav.navbar{
     font-weight: 600;
     font-size: var(--text-lg);
     margin: 0 0 10px 0;
-}
-.sidebar-toggle-btn .icon{
-    stroke: #41ab7d;
-}
-.ellipsis.title-text{
-    color: #41ab7d;
-}
-.standard-actions .btn{
-    background: #4897d3;
-    color: #fff;
-}
-.widget.onboarding-widget-box{
-    background: #4897d3;
-}
-.widget.shortcut-widget-box{
-    background: #41ab7d;
-}
-.widget.shortcut-widget-box .widget-title{
-    color: #fff;
-}
-.widget.links-widget-box{
-    background: #82abd9;
-}
-.widget.links-widget-box .indicator-pill.yellow,
-.widget.links-widget-box .indicator-pill.gray{
-    background: #6ea0d8;
-}
-.widget.links-widget-box .link-item:hover{
-    background: #7097c2;
 }
