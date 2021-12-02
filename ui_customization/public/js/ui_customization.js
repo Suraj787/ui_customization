@@ -40,15 +40,6 @@ $(document).ready(function () {
                         }
                     })
             })
-        // Update Notice Board
-        frappe.call({
-            method: "ui_customization.ui_customization.doctype.custom_methords.Notice_Board_List",
-            args: {
 
-            },
-            callback: (r) => {
-                // console.log(r)
-            }
-        });
     }
 })
