@@ -36,11 +36,11 @@ background: #555;
     transition: all .25s ease;
 }
 /* .form-dashboard-section:hover, */
-.page-form:hover,
-.comment-box:hover,
+/* .page-form:hover, */
+/* .comment-box:hover,
 /* .form-section.card-section:hover, */
 .widget:hover,
-.for-forgot .login-content.page-card:hover,
+/* .for-forgot .login-content.page-card:hover,
 .for-signup .login-content.page-card:hover,
 .for-login .login-content.page-card:hover,
 .container.my-4:hover {
@@ -50,7 +50,7 @@ background: #555;
     -o-transform: translateY(-1px) scale(1.02);
     transform: translateY(-1px) scale(1.02);   
     z-index: 999;
-}
+} */
 
 /* Login Screen */
 body[frappe-session-status='logged-out']{
